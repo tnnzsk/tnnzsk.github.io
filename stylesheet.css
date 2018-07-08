@@ -1,0 +1,413 @@
+/*
+
+.wrap{
+
+}
+
+.box1{
+  background-color: #c98ee8;
+}
+
+.box2{
+  background-color: #8ee899;
+  width: 300px;
+}
+
+.box3{
+  background-color: #8ee5e8;
+  padding: 10px;
+  line-height: 2em;
+  word-spacing: 0.5em;
+  text-indent: 1.5em; /*の初めの空白（インデント）*//*
+  font-weight: 700;  /*フォントの太さ*//*
+  font-style: italic;
+}
+
+.box4{
+  background-color: #e88e9b;
+}
+
+.h200{
+  height: 200px;
+}
+
+*/
+
+
+/*補講内容*/
+
+
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+  font-family: "メイリオ", "Hiragino Kaku Gothic Pro",sans-serif;
+}
+
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+a:hover{
+  background-color: #eeeeee;
+}
+
+/*サイト名*/
+
+.site h1 a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.site h1{
+  font-size: 30px;
+}
+
+/*ナビゲーション*/
+
+.box2{
+  background-color: #57d7ad;
+}
+
+.menu ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu ul li{
+  float: left;
+}
+
+.menu ul li a{
+  display: block;
+  padding: 15px;
+}
+
+.menu a:hover{
+  background-color: #75dbe7;
+}
+
+/*記事*/
+
+/*カテゴリ*/
+
+.category ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.category li{
+  float: left;
+}
+
+.category li a{
+  display: block;
+  background-color: #a4ff85;
+  padding: 5px;
+  margin: 0px 5px 15px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.category li a:hover{
+  background-color: #54ab36;
+  color: #ffffff;
+}
+
+/*記事の中身*/
+
+.kiji h2{
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.kiji p{
+  margin-bottom: 20px;
+}
+
+.kiji h3{
+  border-left: 10px solid #57d7ad;
+  padding-left: 10px;
+  font-size: 20px;
+  margin: 40px 0 20px 10px;
+}
+
+/*サイドメニュー*/
+
+.box4 h3{
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px dotted #dddddd;
+  color: #666666;
+  font-size: 18px;
+}
+
+.sidemenu i{
+  margin-right: 5px;
+  color: #888888;
+}
+
+.sidemenu ul li a{
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.osusume li a{
+  position:relative;
+  margin-bottom: 10px;
+}
+
+.osusume .text{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  position:absolute;
+  bottom: 0px; left: 0px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+.ninki li a {
+  display: block;
+  padding: 15px;
+  border-bottom: dotted 1px #dddddd;
+  color: #2288bb;
+  font-size: 14px
+}
+
+.ninki img{
+  float: left;
+  width: 60px;
+}
+
+.ninki .text{
+  float: none;
+  width: auto;
+  margin-left: 60px;
+}
+
+.ninki span{
+  display: block;
+  color: #666666;
+  font-size: 12px;
+}
+
+.ninki a:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*コピーライト*/
+
+.box5{
+  border-top: solid 1px #dddddd;
+}
+
+.Copyright p{
+  color: #666666;
+  font-size: 14px;
+}
+
+/*ボックスの上下の感覚*/
+
+.box1{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.box3{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.box4{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.box5{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*画面の幅が599px以下の場合*/
+
+@media (max-width: 599px) {
+  .box{
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .site h1 {
+    font-size: 20px;
+  }
+
+  .menu ul li a{
+     padding: 10px 3px;
+     font-size: 11px;
+   }
+
+   .box3{
+     padding-top: 25px;
+   }
+
+   .kiji h2{
+     font-size: 26px;
+   }
+}
+
+/*画面の幅が600px以上で767px以下の場合*/
+
+@media (min-width: 600px) and (max-width: 767px){
+
+}
+
+/*画面の幅が768px以上1093px以下の場合*/
+
+@media (min-width: 768px) and (max-width: 1039px) {
+
+  .boxA:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box3{
+    width: 60%;
+    float: left;
+    padding-right: 50px;
+    -moz-box-sizing-:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+
+  .box4{
+    width: 40%;
+    float: left;
+  }
+
+}
+
+/*画面の幅が1040px以上の場合*/
+@media (min-width: 1040px) {
+
+  .boxA:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box3{
+    width: 60%;
+    float: left;
+    padding-right: 50px;
+    -moz-box-sizing-:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+
+  .box4{
+    width: 40%;
+    float: left;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SP対応*/
+
+/*
+@media (min-width: 768px) {      /*768px以上の画面の場合は下記CSSを読み込む*/
+/*
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+.box2{
+  float: left;
+}
+
+.box3{
+  float: none;
+  margin-left: 300px;
+  width: auto;
+}
+
+}
+*/
